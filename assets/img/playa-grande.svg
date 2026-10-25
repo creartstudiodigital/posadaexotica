@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2aa7e0"/>
+      <stop offset=".55" stop-color="#8fdcf2"/>
+      <stop offset="1" stop-color="#ffe7b0"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a5f8f"/>
+      <stop offset=".35" stop-color="#0f8fb3"/>
+      <stop offset=".75" stop-color="#1fc4cf"/>
+      <stop offset="1" stop-color="#7ff0de"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbe3b2"/>
+      <stop offset="1" stop-color="#eebf7c"/>
+    </linearGradient>
+    <linearGradient id="mtBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4e9f80"/>
+      <stop offset="1" stop-color="#2f7d63"/>
+    </linearGradient>
+    <linearGradient id="mtFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a8a52"/>
+      <stop offset="1" stop-color="#15603a"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fffbe6"/>
+      <stop offset=".45" stop-color="#ffe9a3"/>
+      <stop offset="1" stop-color="#ffe9a3" stop-opacity="0"/>
+    </radialGradient>
+    <symbol id="palm" viewBox="0 0 240 420">
+      <path d="M118 420 C 112 300, 120 180, 150 70" fill="none" stroke="#6e4a2b" stroke-width="16" stroke-linecap="round"/>
+      <path d="M118 420 C 112 300, 120 180, 150 70" fill="none" stroke="#8b6239" stroke-width="16" stroke-linecap="round" stroke-dasharray="3 14"/>
+      <g fill="#17803f">
+        <path d="M150 70 C 100 30, 40 40, 0 110 C 50 70, 100 70, 150 78 Z"/>
+        <path d="M150 70 C 120 10, 60 0, 20 20 C 80 30, 120 50, 150 74 Z"/>
+        <path d="M150 70 C 170 10, 220 0, 240 30 C 200 30, 170 50, 152 74 Z"/>
+        <path d="M150 70 C 210 60, 240 110, 236 170 C 210 120, 180 90, 150 78 Z"/>
+      </g>
+      <g fill="#0f6631">
+        <path d="M150 72 C 110 80, 70 120, 60 180 C 90 130, 120 100, 150 80 Z"/>
+        <path d="M150 72 C 160 30, 140 0, 110 -4 C 130 30, 140 50, 148 74 Z"/>
+        <path d="M152 74 C 190 90, 210 140, 200 200 C 185 150, 170 110, 150 82 Z"/>
+      </g>
+      <circle cx="146" cy="84" r="8" fill="#5a3a16"/>
+      <circle cx="158" cy="86" r="7" fill="#6b4a1e"/>
+    </symbol>
+    <symbol id="boat" viewBox="0 0 220 70">
+      <path d="M6 22 L196 22 Q210 14 218 2 L220 4 Q214 44 186 58 L30 58 Q10 50 6 22 Z" fill="#ffc93c"/>
+      <path d="M8 30 L206 30 Q203 38 198 42 L14 42 Q10 36 8 30 Z" fill="#e6337a"/>
+      <path d="M6 22 L196 22 Q210 14 218 2" fill="none" stroke="#0b2a3c" stroke-width="4"/>
+    </symbol>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#sky)"/>
+  <circle cx="820" cy="300" r="230" fill="url(#sun)"/>
+  <circle cx="820" cy="300" r="70" fill="#fff6d5"/>
+
+  <g fill="#fff" opacity=".85">
+    <ellipse cx="260" cy="170" rx="120" ry="26"/>
+    <ellipse cx="330" cy="150" rx="70" ry="30"/>
+    <ellipse cx="980" cy="120" rx="110" ry="22"/>
+    <ellipse cx="1040" cy="104" rx="60" ry="24"/>
+    <ellipse cx="620" cy="220" rx="80" ry="14" opacity=".7"/>
+  </g>
+
+  <!-- montañas del fondo (Henri Pittier) -->
+  <path d="M0 330 C 120 250, 220 200, 330 230 C 430 260, 470 360, 560 420 C 640 470, 720 500, 780 540 L 0 560 Z" fill="url(#mtBack)"/>
+  <path d="M1200 300 C 1110 290, 1040 340, 990 400 C 950 450, 900 500, 860 540 L 1200 560 Z" fill="url(#mtBack)"/>
+  <!-- cerros frontales -->
+  <path d="M0 420 C 90 360, 180 360, 260 420 C 320 470, 380 520, 470 560 L 0 600 Z" fill="url(#mtFront)"/>
+  <path d="M1200 420 C 1130 400, 1070 440, 1030 490 C 1000 530, 960 555, 920 570 L 1200 600 Z" fill="url(#mtFront)"/>
+  <g fill="#0f5a34" opacity=".55">
+    <circle cx="70" cy="420" r="26"/><circle cx="130" cy="400" r="22"/><circle cx="200" cy="410" r="24"/>
+    <circle cx="1120" cy="440" r="24"/><circle cx="1170" cy="420" r="22"/><circle cx="1070" cy="470" r="20"/>
+  </g>
+
+  <!-- mar -->
+  <rect y="548" width="1200" height="380" fill="url(#sea)"/>
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" opacity=".5" stroke-width="3">
+    <path d="M140 600 q 30 -8 60 0 t 60 0"/>
+    <path d="M640 590 q 30 -8 60 0 t 60 0"/>
+    <path d="M900 640 q 40 -10 80 0 t 80 0"/>
+    <path d="M300 680 q 40 -10 80 0 t 80 0"/>
+    <path d="M560 740 q 50 -12 100 0 t 100 0"/>
+    <path d="M60 780 q 50 -12 100 0 t 100 0"/>
+    <path d="M880 800 q 50 -12 100 0 t 100 0"/>
+  </g>
+  <!-- espejo del sol -->
+  <g fill="#fff8d8" opacity=".75">
+    <rect x="790" y="565" width="60" height="5" rx="2.5"/>
+    <rect x="770" y="585" width="100" height="5" rx="2.5"/>
+    <rect x="796" y="606" width="48" height="5" rx="2.5"/>
+    <rect x="760" y="628" width="120" height="5" rx="2.5" opacity=".6"/>
+  </g>
+
+  <!-- peñeros fondeados -->
+  <use href="#boat" x="430" y="640" width="110" height="35"/>
+  <use href="#boat" x="700" y="700" width="90" height="28" transform="scale(-1 1) translate(-1490 0)"/>
+
+  <!-- orilla -->
+  <path d="M0 900 C 200 870, 400 920, 600 895 C 800 870, 1000 915, 1200 890 L1200 1200 L0 1200 Z" fill="url(#sand)"/>
+  <path d="M0 900 C 200 870, 400 920, 600 895 C 800 870, 1000 915, 1200 890" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" opacity=".9"/>
+  <path d="M0 918 C 220 892, 380 938, 600 912 C 820 888, 1000 930, 1200 908" fill="none" stroke="#bff6ee" stroke-width="6" opacity=".8"/>
+
+  <!-- peñero varado -->
+  <use href="#boat" x="760" y="960" width="230" height="74"/>
+
+  <!-- palmeras -->
+  <use href="#palm" x="-60" y="420" width="360" height="630"/>
+  <use href="#palm" x="80" y="560" width="250" height="440"/>
+  <use href="#palm" x="1000" y="460" width="300" height="540" transform="scale(-1 1) translate(-2200 0)"/>
+  <use href="#palm" x="930" y="600" width="200" height="350" transform="scale(-1 1) translate(-2060 0)"/>
+
+  <!-- buganvillas -->
+  <g>
+    <circle cx="40" cy="1150" r="70" fill="#e6337a"/>
+    <circle cx="120" cy="1190" r="50" fill="#ff5fa2"/>
+    <circle cx="1160" cy="1140" r="80" fill="#e6337a"/>
+    <circle cx="1080" cy="1200" r="54" fill="#ff5fa2"/>
+    <g fill="#ffd6e8" opacity=".9">
+      <circle cx="30" cy="1120" r="8"/><circle cx="80" cy="1160" r="6"/><circle cx="1150" cy="1110" r="8"/><circle cx="1110" cy="1170" r="6"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Posada Exótica · Choroní, Venezuela</title>
+  <meta name="description" content="Posada Exótica, un exquisito remanso de tranquilidad en Choroní. Habitaciones con aire acondicionado, piscina, desayuno criollo, traslados en lancha y planes full day a Chuao y Cepe.">
+  <meta name="theme-color" content="#0b2a3c">
+  <meta property="og:title" content="Posada Exótica · Choroní">
+  <meta property="og:description" content="Un exquisito remanso de tranquilidad en Choroní. #VenyPasalaBien">
+  <meta property="og:image" content="assets/img/patio-buganvilla.webp">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261023">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <a class="nav-logo" href="#inicio" aria-label="Posada Exótica, inicio">
+    <img src="assets/img/logo.webp" alt="Posada Exótica" width="600" height="384">
+  </a>
+  <nav class="nav-links" id="navLinks" aria-label="Principal">
+    <a href="#habitaciones">Habitaciones</a>
+    <a href="#lancha">Full Day</a>
+    <a href="#agencias">Agencias</a>
+    <a href="#extras">Extras</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <a class="btn btn-green nav-cta" href="https://wa.me/584243211736?text=Hola%20Posada%20Ex%C3%B3tica%2C%20quiero%20reservar%20una%20habitaci%C3%B3n" target="_blank" rel="noopener">Reservar</a>
+  <button class="nav-burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+</header>
+
+<main>
+
+<!-- ================= 1 · PORTADA CARRUSEL ================= -->
+<section class="hero" id="inicio" aria-roledescription="carrusel" aria-label="Posada Exótica">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-bg-layer is-active" style="background-image:url(assets/img/patio-buganvilla.webp)"></div>
+    <div class="hero-bg-layer" style="background-image:url(assets/img/piscina-noche.webp)"></div>
+    <div class="hero-bg-layer" style="background-image:url(assets/img/terraza-palmeras.webp)"></div>
+    <div class="hero-bg-layer" style="background-image:url(assets/img/piscina-dia.webp)"></div>
+    <div class="hero-bg-layer" style="background-image:url(assets/img/hamaca-pasillo.webp)"></div>
+    <div class="hero-bg-layer" style="background-image:url(assets/img/desayuno-criollo.webp)"></div>
+    <div class="hero-bg-layer" style="background-image:url(assets/img/terraza-panoramica.webp)"></div>
+  </div>
+  <div class="hero-grain" aria-hidden="true"></div>
+  <div class="trini" aria-hidden="true">
+    <img class="tr tr-l2" src="assets/img/trinitaria-rama.webp" alt="">
+    <img class="tr tr-r2" src="assets/img/trinitaria-ramo.webp" alt="">
+  </div>
+
+  <h1 class="hero-title">Posada Exótica <em>en Choroní</em></h1>
+
+  <div class="cf" id="coverflow">
+    <button class="cf-arrow cf-prev" id="cfPrev" aria-label="Anterior">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <div class="cf-stage" id="cfStage">
+      <article class="cf-card is-active">
+        <img src="assets/img/patio-buganvilla.webp" alt="Patio de la posada con buganvillas y puertas de colores">
+      </article>
+      <article class="cf-card">
+        <img src="assets/img/piscina-noche.webp" alt="Piscina iluminada de noche">
+      </article>
+      <article class="cf-card">
+        <img src="assets/img/terraza-palmeras.webp" alt="Terraza con toldos de palma y vista a la montaña">
+      </article>
+      <article class="cf-card">
+        <img src="assets/img/piscina-dia.webp" alt="Piscina de día con cascada">
+      </article>
+      <article class="cf-card">
+        <img src="assets/img/hamaca-pasillo.webp" alt="Hamaca en el pasillo de la posada">
+      </article>
+      <article class="cf-card">
+        <img src="assets/img/desayuno-criollo.webp" alt="Desayuno criollo con arepas">
+      </article>
+      <article class="cf-card">
+        <img src="assets/img/terraza-panoramica.webp" alt="Terraza techada con luces y buganvillas">
+      </article>
+    </div>
+    <button class="cf-arrow cf-next" id="cfNext" aria-label="Siguiente">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+
+  <div class="hero-foot">
+    <div class="cf-dots" id="cfDots" role="tablist" aria-label="Elegir imagen"></div>
+    <div class="hero-actions">
+      <a class="hero-btn hb-rooms" href="#habitaciones">
+        <span class="hb-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18v-6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v6M3 18h18M3 21v-3M21 21v-3M7 9V6h4v3M13 9V6h4v3"/></svg></span>
+        <span>Habitaciones · Precios</span>
+      </a>
+      <a class="hero-btn hb-boat" href="#lancha">
+        <span class="hb-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 14h18l-2.5 5H5.5zM6 14V9h7l3 5M10 9V5M2 21c2 0 2-1 4-1s2 1 4 1 2-1 4-1 2 1 4 1 2-1 4-1"/></svg></span>
+        <span><small>Chuao · Cepe</small>Full day en lancha</span>
+      </a>
+      <a class="hero-btn hb-tours" href="#agencias">
+        <span class="hb-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="3"/><path d="M3 11h18M7 17v2.5M17 17v2.5M8 4v7M16 4v7"/></svg></span>
+        <span><small>Precios para</small>Agencias de tours</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2 · HABITACIONES ================= -->
+<section class="rooms" id="habitaciones">
+  <div class="wave wave-top" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 60V20c120 24 240 36 360 24S600 0 720 8s240 40 360 40 240-24 360-32v44z"/></svg></div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Precio por habitación · por noche</span>
+      <h2>Puertas de colores,<br><em>un mismo descanso.</em></h2>
+      <p class="lead">Todas nuestras habitaciones tienen aire acondicionado, lencería, baño interno y agua caliente.</p>
+    </div>
+
+    <div class="season reveal" role="group" aria-label="Elegir días de la estadía">
+      <button type="button" class="season-btn" data-season="week" aria-pressed="false">Lunes a Jueves</button>
+      <button type="button" class="season-btn is-on" data-season="weekend" aria-pressed="true">Viernes a Domingo</button>
+      <span class="season-pill" aria-hidden="true"></span>
+    </div>
+    <div class="xmas-wrap reveal" id="xmasWrap">
+      <button type="button" class="xmas-btn" id="xmasBtn" data-season="xmas" aria-pressed="false">
+        <svg class="xmas-ico" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 1.5l1.6 3.3 3.6.5-2.6 2.5.6 3.6L16 9.7l-3.2 1.7.6-3.6-2.6-2.5 3.6-.5z" fill="#ffd34d"/><path d="M16 9l-6 7.5h3.2L8 23h5.5L7 29h18l-6.5-6H24l-5.2-6.5H22z" fill="#1f9e5a"/><rect x="14" y="28" width="4" height="3.5" rx="1" fill="#7a4a2a"/><circle cx="13" cy="19" r="1.4" fill="#ff5f6d"/><circle cx="19" cy="22.5" r="1.4" fill="#ffd34d"/><circle cx="15" cy="25.5" r="1.4" fill="#fff"/><circle cx="18.5" cy="15.5" r="1.2" fill="#fff"/></svg>
+        <span><small>Del 23/12/26 al 17/01/27</small>Temporada navideña</span>
+      </button>
+    </div>
+
+    <div class="room-grid">
+      <article class="room reveal" style="--door:#12b5c9">
+        <div class="room-media"><img src="assets/img/hab-matrimonial-azul.webp" alt="Habitación matrimonial con pared turquesa y cama doble" loading="lazy"><span class="room-tag">2 personas</span></div>
+        <div class="room-body">
+          <h3>Matrimonial <span class="per-night">/ noche</span></h3>
+          <ul class="price-list">
+            <li><span>Sin desayuno</span><b class="price" data-week="30" data-weekend="40" data-xmas="50">40€</b></li>
+            <li><span>Con desayuno</span><b class="price" data-week="45" data-weekend="55" data-xmas="65">55€</b></li>
+          </ul>
+          <a class="btn btn-door book-room" data-room="Matrimonial (2 personas)" href="https://wa.me/584243211736?text=Hola%20Posada%20Ex%C3%B3tica%2C%20quiero%20reservar%20la%20habitaci%C3%B3n%20Matrimonial%20(2%20personas)%20de%20viernes%20a%20domingo" target="_blank" rel="noopener">Reservar matrimonial</a>
+        </div>
+      </article>
+      <article class="room reveal" style="--door:#ffb703">
+        <div class="room-media"><img src="assets/img/hab-triple-amarilla.webp" alt="Habitación triple amarilla con cama doble y cama individual" loading="lazy"><span class="room-tag">3 personas</span></div>
+        <div class="room-body">
+          <h3>Triple <span class="per-night">/ noche</span></h3>
+          <ul class="price-list">
+            <li><span>Sin desayuno</span><b class="price" data-week="45" data-weekend="60" data-xmas="75">60€</b></li>
+            <li><span>Con desayuno</span><b class="price" data-week="65" data-weekend="80" data-xmas="105">80€</b></li>
+          </ul>
+          <a class="btn btn-door book-room" data-room="Triple (3 personas)" href="https://wa.me/584243211736?text=Hola%20Posada%20Ex%C3%B3tica%2C%20quiero%20reservar%20la%20habitaci%C3%B3n%20Triple%20(3%20personas)%20de%20viernes%20a%20domingo" target="_blank" rel="noopener">Reservar triple</a>
+        </div>
+      </article>
+      <article class="room reveal" style="--door:#e63946">
+        <div class="room-media"><img src="assets/img/hab-cuadruple-morada.webp" alt="Habitación cuádruple con dos camas dobles y cortinas moradas" loading="lazy"><span class="room-tag">4 personas</span></div>
+        <div class="room-body">
+          <h3>Cuádruple <span class="per-night">/ noche</span></h3>
+          <ul class="price-list">
+            <li><span>Sin desayuno</span><b class="price" data-week="50" data-weekend="70" data-xmas="90">70€</b></li>
+            <li><span>Con desayuno</span><b class="price" data-week="80" data-weekend="100" data-xmas="120">100€</b></li>
+          </ul>
+          <a class="btn btn-door book-room" data-room="Cuádruple (4 personas)" href="https://wa.me/584243211736?text=Hola%20Posada%20Ex%C3%B3tica%2C%20quiero%20reservar%20la%20habitaci%C3%B3n%20Cu%C3%A1druple%20(4%20personas)%20de%20viernes%20a%20domingo" target="_blank" rel="noopener">Reservar cuádruple</a>
+        </div>
+      </article>
+    </div>
+    <p class="season-note" id="seasonNote">Mostrando tarifas de <b>viernes a domingo</b>.</p>
+
+    <ul class="amen reveal" aria-label="En todas las habitaciones">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M4.9 6.5l14.2 11M19.1 6.5L4.9 17.5M9 3l3 3 3-3M9 21l3-3 3 3"/></svg>Aire acondicionado</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v12H4zM4 11h16M8 7V5h8v2"/></svg>Lencería</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM6 12V5a2 2 0 0 1 4 0M8 19l-1 2M16 19l1 2"/></svg>Baño interno</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s5 5.5 5 10a5 5 0 0 1-10 0c0-4.5 5-10 5-10z"/><path d="M10 14a2 2 0 0 0 2 2"/></svg>Agua caliente</li>
+    </ul>
+
+    <div class="stay">
+      <figure class="stay-photo reveal">
+        <img src="assets/img/desayuno-criollo.webp" alt="Desayuno criollo: arepas, perico, carne mechada, queso y café" loading="lazy">
+        <figcaption>Desayuno criollo</figcaption>
+      </figure>
+      <div class="stay-copy reveal">
+        <span class="eyebrow">Tu estadía incluye</span>
+        <h3>Todo para quedarte en casa, aunque estés de viaje.</h3>
+        <ul class="incl">
+          <li><b>Piscina</b> con cascada</li>
+          <li><b>Cocina / parrillera</b> con todos los utensilios básicos para cocinar</li>
+          <li><b>Terraza</b> con vista a la montaña</li>
+          <li><b>Estacionamiento</b></li>
+          <li><b>WiFi</b></li>
+        </ul>
+        <div class="stay-badges">
+          <span class="badge badge-pet"><img class="pet-sticker" src="assets/img/mascota.webp" alt="La mascota de Posada Exótica" width="260" height="260"><span>Aceptamos mascotas</span></span>
+          <span class="badge badge-food"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11h18a9 9 0 0 1-18 0zM8 7c0-2 2-2 2-4M13 7c0-2 2-2 2-4"/></svg>Desayuno tipo criollo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3 · LANCHA & FULL DAY (escena en escena) ================= -->
+<section class="sea" id="lancha">
+  <div class="sea-bg" id="seaBg" aria-hidden="true"></div>
+  <div class="wrap sea-wrap">
+    <div class="sec-head sec-head-light reveal">
+      <span class="eyebrow">Traslados en lancha · Planes full day</span>
+      <h2>Las playas vecinas,<br><em>a un paseo en peñero.</em></h2>
+    </div>
+
+    <div class="sea-grid">
+      <div class="glass tarifas reveal">
+        <h3>Tarifas de traslado</h3>
+        <p class="glass-sub">Por persona, ida y vuelta</p>
+        <ul class="leaders">
+          <li><span>Valle Seco</span><i></i><b>10€</b></li>
+          <li><span>Chuao</span><i></i><b>10€</b></li>
+          <li><span>Cepe</span><i></i><b>12€</b></li>
+          <li><span>Uricao</span><i></i><b>12€</b></li>
+          <li><span>Tuja</span><i></i><b>15€</b></li>
+          <li><span>Juan Andrés</span><i></i><b>15€</b></li>
+          <li><span>Ciénaga</span><i></i><b>25€</b></li>
+        </ul>
+      </div>
+
+      <div class="pip reveal" id="pip">
+        <div class="pip-frame">
+          <div class="pip-scene" id="pipScene">
+            <video class="pip-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/video-poster.webp" aria-label="Video de las playas de Choroní">
+              <source src="assets/video/playa-grande.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <svg class="pip-boat" viewBox="0 0 360 150" aria-hidden="true">
+          <path class="wake" d="M0 118 C 40 106, 70 128, 110 116" />
+          <path class="wake" d="M10 134 C 50 124, 80 142, 120 132" />
+          <rect x="54" y="62" width="14" height="38" rx="3" fill="#0b2a3c"/>
+          <rect x="46" y="54" width="28" height="18" rx="5" fill="#2b4a5c"/>
+          <path d="M60 70 L320 70 Q340 60 352 38 L358 40 Q350 104 300 122 L96 122 Q66 112 60 70 Z" fill="#ffc93c"/>
+          <path d="M64 86 L346 86 Q340 98 332 104 L80 104 Q70 96 64 86 Z" fill="#e6337a"/>
+          <path d="M60 70 L320 70 Q340 60 352 38" fill="none" stroke="#0b2a3c" stroke-width="6" stroke-linecap="round"/>
+          <text x="210" y="100" font-family="Caveat, cursive" font-size="20" font-weight="700" fill="#fff">Exótica</text>
+          <circle cx="140" cy="54" r="11" fill="#7a4a2a"/><path d="M128 70 q12 -20 24 0z" fill="#12b5c9"/>
+          <circle cx="190" cy="54" r="11" fill="#5a3a20"/><path d="M178 70 q12 -20 24 0z" fill="#ff7a59"/>
+          <path d="M126 46 q14 -14 28 0z" fill="#fff3c4"/>
+        </svg>
+      </div>
+
+      <div class="plans">
+        <article class="plan reveal">
+          <div class="plan-top">
+            <span class="plan-kicker">Full day · Chuao – Cepe</span>
+            <p class="plan-price"><b>40€</b> / persona</p>
+          </div>
+          <ul class="checks">
+            <li>Viaje en lancha ida y vuelta (exclusividad) a Chuao y Cepe</li>
+            <li>Jeep de traslado interno en Chuao, ida y vuelta, para la ruta del cacao</li>
+            <li>Guiatura por la ruta del cacao</li>
+            <li>Almuerzo en Cepe</li>
+            <li>Toldo en playa Cepe</li>
+            <li>Guía a Puerto Escondido</li>
+            <li>Cava con hielo para todo el recorrido</li>
+          </ul>
+        </article>
+        <article class="plan plan-alt reveal">
+          <div class="plan-top">
+            <span class="plan-kicker">Full day · Cepe</span>
+            <p class="plan-price"><b>30€</b> / persona</p>
+          </div>
+          <ul class="checks">
+            <li>Viaje en lancha ida y vuelta a Cepe</li>
+            <li>Almuerzo en Cepe</li>
+            <li>Toldo en playa Cepe</li>
+            <li>Guía a Puerto Escondido</li>
+            <li>Cava con hielo para todo el recorrido</li>
+          </ul>
+        </article>
+        <p class="plans-note reveal">Planes full day: <b>mínimo 10 personas</b>.
+          <a href="https://wa.me/584243211736?text=Hola%20Posada%20Ex%C3%B3tica%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20full%20day%20y%20traslados%20en%20lancha" target="_blank" rel="noopener">Consultar disponibilidad →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AGENCIAS DE TOURS ================= -->
+<section class="tours" id="agencias">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Precios para agencias de tours</span>
+      <h2>Trae a tu grupo,<br><em>nosotros lo recibimos.</em></h2>
+    </div>
+
+    <div class="tours-grid">
+      <div class="tours-left">
+      <div class="collage reveal" aria-label="Fotos de grupos en la posada">
+        <figure class="col-img col-main"><img src="assets/img/agencia-grupo.webp" alt="Grupo grande de huéspedes frente a la posada" loading="lazy"></figure>
+        <figure class="col-img col-night"><img src="assets/img/agencia-piscina-noche.webp" alt="Grupo de huéspedes en la piscina de noche" loading="lazy"></figure>
+        <figure class="col-img col-beach"><img src="assets/img/agencia-playa.webp" alt="Grupo de huéspedes en la playa" loading="lazy"></figure>
+        <figure class="col-img col-a"><img src="assets/img/agencia-playa-grupo.webp" alt="Grupo grande de una agencia en la playa con peñeros al fondo" loading="lazy"></figure>
+        <figure class="col-img col-b"><img src="assets/img/agencia-iglesia.webp" alt="Grupo de visitantes frente a la iglesia de Choroní" loading="lazy"></figure>
+        <figure class="col-img col-c"><img src="assets/img/agencia-desayuno-terraza.webp" alt="Huéspedes desayunando en la terraza con vista a la montaña" loading="lazy"></figure>
+      </div>
+      <div class="allies reveal">
+        <h3>Hemos trabajado con:</h3>
+        <ul class="ally-list">
+          <li><img src="assets/img/aliado-conoce-destinos-venezuela.webp" alt="Conoce Destinos Venezuela" loading="lazy" width="240" height="240"><span>Conoce Destinos Venezuela</span></li>
+          <li><img src="assets/img/aliado-viajeros-venezuela.webp" alt="Viajeros Venezuela" loading="lazy" width="240" height="240"><span>Viajeros Venezuela</span></li>
+          <li><img src="assets/img/aliado-chiguiritos-trip.webp" alt="Chigüiritos Trip" loading="lazy" width="240" height="240"><span>Chigüiritos Trip</span></li>
+          <li><img src="assets/img/aliado-rutas-mochileras.webp" alt="Rutas Mochileras" loading="lazy" width="240" height="240"><span>Rutas Mochileras</span></li>
+          <li><img src="assets/img/aliado-karuay-aventura.webp" alt="Karuay Aventura" loading="lazy" width="240" height="240"><span>Karuay Aventura</span></li>
+        </ul>
+      </div>
+      </div>
+
+      <div class="tours-info">
+        <article class="tour-card reveal">
+          <div class="tour-top">
+            <span class="tour-kicker"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="3"/><path d="M3 11h18M7 17v2.5M17 17v2.5M7 14h.01M17 14h.01M8 4v7M16 4v7"/></svg>Paquete grupo</span>
+            <p class="tour-price"><b>35€</b> / persona</p>
+          </div>
+          <ul class="tour-incl">
+            <li><span class="ti">🛏</span><div><b>Estadía 1 noche</b></div></li>
+            <li><span class="ti">🍔</span><div><b>1 cena de hamburguesa</b><small>Incluye papitas + refresco</small></div></li>
+            <li><span class="ti">☕</span><div><b>1 desayuno</b><small>Empanadas + jugo + café</small></div></li>
+          </ul>
+          <div class="tour-alt"><span>Solo estadía</span><b>20€</b><small>/ persona</small></div>
+        </article>
+
+        <div class="tour-cap reveal">
+          <h3>Disponemos de</h3>
+          <ul class="cap-list">
+            <li><b>6</b><span>habitaciones matrimoniales</span></li>
+            <li><b>2</b><span>habitaciones triples</span></li>
+            <li><b>1</b><span>habitación cuádruple</span></li>
+          </ul>
+          <p class="cap-total">Capacidad total: <b>22 personas</b></p>
+        </div>
+
+        <div class="tour-plus reveal">
+          <span class="plus-tag">Plus</span>
+          <p>Ofrecemos una <b>habitación matrimonial adicional de cortesía</b> para los organizadores.</p>
+        </div>
+
+        <p class="tour-note reveal">¿Son más de 22? Sugerimos la posada de al lado para completar los puestos faltantes.</p>
+
+        <a class="btn btn-tour reveal" href="https://wa.me/584243211736?text=Hola%20Posada%20Ex%C3%B3tica%2C%20tengo%20una%20agencia%20de%20tours%20y%20quiero%20cotizar%20para%20un%20grupo" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.7-5.2A8.5 8.5 0 1 1 21 12z"/></svg>
+          Cotizar para mi grupo
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4 · EXTRAS ================= -->
+<section class="extras" id="extras">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Extras de la posada</span>
+      <h2>Antojos de la casa,<br><em>sin salir de la piscina.</em></h2>
+    </div>
+    <div class="extra-grid">
+      <article class="extra reveal" style="--c:#12b5c9">
+        <img class="extra-photo" src="assets/img/extra-cerveza.webp" alt="Tobo con 7 cervezas Polarcita en hielo" loading="lazy">
+        <h3>Tobo de cerveza</h3>
+        <p>7 unidades bien frías</p>
+        <span class="extra-price">6€</span>
+      </article>
+      <article class="extra reveal" style="--c:#e6337a">
+        <img class="extra-photo" src="assets/img/extra-tequenos.webp" alt="Ración de tequeños con salsa" loading="lazy">
+        <h3>Ración de tequeños</h3>
+        <p>6 unidades</p>
+        <span class="extra-price">5€</span>
+      </article>
+      <article class="extra reveal" style="--c:#1f9e5a">
+        <img class="extra-photo" src="assets/img/extra-empanadas.webp" alt="Dos empanadas con jugo" loading="lazy">
+        <h3>Combo de empanadas</h3>
+        <p>2 empanadas + jugo</p>
+        <span class="extra-price">6€</span>
+      </article>
+      <article class="extra reveal" style="--c:#ff7a00">
+        <img class="extra-photo" src="assets/img/extra-hamburguesa.webp" alt="Hamburguesa con papas fritas y refresco" loading="lazy">
+        <h3>Hamburguesa</h3>
+        <p>+ papas fritas + refresco</p>
+        <span class="extra-price">8€</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5 · EXPERIENCIA ================= -->
+<section class="exp" id="experiencia">
+  <div class="wrap">
+    <div class="sec-head sec-head-light reveal">
+      <span class="eyebrow">Experiencia de nuestros huéspedes</span>
+      <h2>Así se pasa bien<br><em>en Exótica.</em></h2>
+    </div>
+  </div>
+  <div class="marquee" aria-label="Fotos de huéspedes en la posada">
+    <div class="marquee-track" id="marqueeTrack">
+      <figure class="polaroid" style="--r:-3deg"><img src="assets/img/huesped-01.webp" alt="Grupo de huéspedes compartiendo en la mesa" loading="lazy"><figcaption>Mesa de amigos</figcaption></figure>
+      <figure class="polaroid" style="--r:2deg"><img src="assets/img/huesped-02.webp" alt="Huésped posando frente a la pared amarilla con buganvillas" loading="lazy"><figcaption>Color por todas partes</figcaption></figure>
+      <figure class="polaroid" style="--r:-1deg"><img src="assets/img/huesped-03.webp" alt="Pareja desayunando en la terraza bajo una sombrilla" loading="lazy"><figcaption>Jugos en la terraza</figcaption></figure>
+      <figure class="polaroid" style="--r:3deg"><img src="assets/img/huesped-04.webp" alt="Huésped tomando sol en el borde de la piscina" loading="lazy"><figcaption>Sol y piscina</figcaption></figure>
+      <figure class="polaroid" style="--r:-2deg"><img src="assets/img/huesped-05.webp" alt="Huésped en la hamaca junto a su perro" loading="lazy"><figcaption>Mascotas bienvenidas</figcaption></figure>
+      <figure class="polaroid" style="--r:1deg"><img src="assets/img/huesped-06.webp" alt="Pareja en la terraza con vista a la montaña" loading="lazy"><figcaption>Atardecer en la terraza</figcaption></figure>
+      <figure class="polaroid" style="--r:-3deg"><img src="assets/img/huesped-07.webp" alt="Huésped en la piscina" loading="lazy"><figcaption>Chapuzón</figcaption></figure>
+      <figure class="polaroid" style="--r:2deg"><img src="assets/img/huesped-08.webp" alt="Huésped posando en el patio de colores" loading="lazy"><figcaption>El patio</figcaption></figure>
+      <figure class="polaroid" style="--r:-1deg"><img src="assets/img/huesped-09.webp" alt="Huésped descansando en el sofá de la terraza" loading="lazy"><figcaption>Modo descanso</figcaption></figure>
+      <figure class="polaroid" style="--r:3deg"><img src="assets/img/huesped-10.webp" alt="Huésped con un café en la terraza" loading="lazy"><figcaption>Cafecito con vista</figcaption></figure>
+      <figure class="polaroid" style="--r:-2deg"><img src="assets/img/huesped-11.webp" alt="Huésped bajo la cascada de la piscina" loading="lazy"><figcaption>Bajo la cascada</figcaption></figure>
+    </div>
+  </div>
+  <p class="hashtag reveal">#VenyPasalaBien</p>
+</section>
+
+<!-- ================= 6 · UBICACIÓN ================= -->
+<section class="loc" id="ubicacion">
+  <div class="wrap loc-grid">
+    <div class="loc-copy reveal">
+      <span class="eyebrow">Estamos ubicados en</span>
+      <h2>Sector La Loma<br><em>de Choroní.</em></h2>
+      <p class="lead">A <b>10 minutos de Playa Grande</b> en vehículo. Lo bastante cerca del mar, lo bastante lejos del ruido.</p>
+      <ul class="loc-facts">
+        <li><b>10 min</b><span>a Playa Grande en carro</span></li>
+        <li><b>Choroní</b><span>Estado Aragua, Venezuela</span></li>
+      </ul>
+      <a class="btn btn-sea" href="https://maps.google.com/?cid=11789121621381918027&amp;entry=gps" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        Abrir en Google Maps
+      </a>
+    </div>
+    <div class="map-frame reveal">
+      <iframe title="Mapa de Posada Exótica en Google Maps" src="https://maps.google.com/maps?q=Posada%20Ex%C3%B3tica%2C%20Choron%C3%AD%2C%20Aragua&amp;z=15&amp;hl=es&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 7 · CONTACTO ================= -->
+<section class="contact" id="contacto">
+  <div class="wave wave-top wave-navy" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 60V28c160-30 320-30 480 0s320 30 480 0 320-30 480 0v32z"/></svg></div>
+  <div class="wrap">
+    <div class="sec-head sec-head-light reveal">
+      <span class="eyebrow">Contactos</span>
+      <h2>Reserva tu estadía.<br><em>Te respondemos rápido.</em></h2>
+    </div>
+    <div class="social-grid">
+      <a class="social s-wa reveal" href="https://wa.me/584243211736?text=Hola%20Posada%20Ex%C3%B3tica%2C%20quiero%20reservar" target="_blank" rel="noopener">
+        <svg class="social-logo" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M24 4C13 4 4 12.8 4 23.6c0 3.8 1.1 7.3 3 10.3L4.6 43.4l9.8-2.5c2.9 1.6 6.2 2.4 9.6 2.4 11 0 20-8.8 20-19.7S35 4 24 4z" fill="#fff"/>
+          <path d="M24 7.4c-9.2 0-16.6 7.3-16.6 16.2 0 3.4 1.1 6.6 3 9.3l-1.5 5.6 5.8-1.5c2.6 1.7 5.8 2.7 9.3 2.7 9.2 0 16.6-7.3 16.6-16.2S33.2 7.4 24 7.4z" fill="#25d366"/>
+          <path transform="translate(12.4 11.6) scale(.98)" fill="#fff" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+        <span class="social-name">WhatsApp</span>
+        <span class="social-handle">0424-3211736</span>
+      </a>
+      <a class="social s-ig reveal" href="https://www.instagram.com/posadaexotica/" target="_blank" rel="noopener">
+        <svg class="social-logo" viewBox="0 0 48 48" aria-hidden="true">
+          <defs><radialGradient id="igG" cx="30%" cy="107%" r="150%"><stop offset="0" stop-color="#fdf497"/><stop offset=".05" stop-color="#fdf497"/><stop offset=".45" stop-color="#fd5949"/><stop offset=".6" stop-color="#d6249f"/><stop offset=".9" stop-color="#285AEB"/></radialGradient></defs>
+          <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#igG)"/>
+          <rect x="11" y="11" width="26" height="26" rx="8" fill="none" stroke="#fff" stroke-width="3.4"/>
+          <circle cx="24" cy="24" r="6.2" fill="none" stroke="#fff" stroke-width="3.4"/>
+          <circle cx="32" cy="16" r="2" fill="#fff"/>
+        </svg>
+        <span class="social-name">Instagram</span>
+        <span class="social-handle">@posadaexotica</span>
+      </a>
+      <a class="social s-tt reveal" href="https://www.tiktok.com/@posadaexotica" target="_blank" rel="noopener">
+        <svg class="social-logo" viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="2" y="2" width="44" height="44" rx="12" fill="#000"/>
+          <g transform="translate(9 8)">
+            <path transform="translate(-1.4 -1.2)" fill="#25f4ee" d="M18 2h5.4c.4 4 3 6.6 7 7v5.4c-2.6 0-5-.8-7-2.2v11.2a9.4 9.4 0 1 1-9.4-9.4c.5 0 1 0 1.5.1v5.6a4 4 0 1 0 2.5 3.7z"/>
+            <path transform="translate(1.4 1.2)" fill="#fe2c55" d="M18 2h5.4c.4 4 3 6.6 7 7v5.4c-2.6 0-5-.8-7-2.2v11.2a9.4 9.4 0 1 1-9.4-9.4c.5 0 1 0 1.5.1v5.6a4 4 0 1 0 2.5 3.7z"/>
+            <path fill="#fff" d="M18 2h5.4c.4 4 3 6.6 7 7v5.4c-2.6 0-5-.8-7-2.2v11.2a9.4 9.4 0 1 1-9.4-9.4c.5 0 1 0 1.5.1v5.6a4 4 0 1 0 2.5 3.7z"/>
+          </g>
+        </svg>
+        <span class="social-name">TikTok</span>
+        <span class="social-handle">@posadaexotica</span>
+      </a>
+    </div>
+
+    <div class="pay reveal">
+      <span class="eyebrow">Reserva tu estadía, aceptamos</span>
+      <ul>
+        <li><b>Bs</b> Pago móvil</li>
+        <li><b>$</b> Efectivo</li>
+        <li><b>₿</b> Binance</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <img src="assets/img/logo.webp" alt="Posada Exótica" width="600" height="384" loading="lazy">
+    <p class="foot-tag">#VenyPasalaBien</p>
+    <p class="foot-small">Sector La Loma de Choroní · Aragua, Venezuela · © <span id="year">2026</span> Posada Exótica</p>
+  </footer>
+</section>
+
+</main>
+
+<a class="map-float" href="https://maps.google.com/?cid=11789121621381918027&amp;entry=gps" target="_blank" rel="noopener" aria-label="Ver ubicación en Google Maps">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>
+</a>
+<a class="wa-float" href="https://wa.me/584243211736?text=Hola%20Posada%20Ex%C3%B3tica%2C%20quiero%20reservar" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4C13 4 4 12.8 4 23.6c0 3.8 1.1 7.3 3 10.3L4.6 43.4l9.8-2.5c2.9 1.6 6.2 2.4 9.6 2.4 11 0 20-8.8 20-19.7S35 4 24 4z" fill="#fff"/><path d="M24 7.4c-9.2 0-16.6 7.3-16.6 16.2 0 3.4 1.1 6.6 3 9.3l-1.5 5.6 5.8-1.5c2.6 1.7 5.8 2.7 9.3 2.7 9.2 0 16.6-7.3 16.6-16.2S33.2 7.4 24 7.4z" fill="#25d366"/><path transform="translate(12.4 11.6) scale(.98)" fill="#fff" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+</a>
+
+<script defer src="main.js?v=20261023"></script>
+</body>
+</html>
