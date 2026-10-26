@@ -391,6 +391,12 @@ section { position: relative; scroll-margin-top: 70px; }
 .room-body { padding: 24px 26px 28px; display: flex; flex-direction: column; gap: 16px; flex: 1; }
 .room-body h3 { font-family: var(--f-display); font-weight: 900; font-size: 2rem; letter-spacing: -.01em; }
 .per-night { font-family: var(--f-body); font-weight: 500; font-size: 1.05rem; color: var(--muted); letter-spacing: 0; }
+.valid-for {
+  display: flex; align-items: center; gap: 8px; margin-top: -6px;
+  font-size: .92rem; color: var(--muted);
+}
+.valid-for b { color: var(--ink); }
+.valid-for svg { width: 20px; height: 20px; flex: none; fill: none; stroke: var(--door); stroke-width: 2; stroke-linecap: round; }
 .price-list li {
   display: flex; align-items: baseline; justify-content: space-between;
   padding: 12px 0; border-bottom: 1.5px dashed rgba(11,42,60,.14);
